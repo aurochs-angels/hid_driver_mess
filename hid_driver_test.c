@@ -5,3 +5,6 @@
 
 static hid_init(void) { return 0; }
 static hid_exit(void) { return; }
+
+module_init(hid_init);
+module_exit(hid_exit);
